@@ -80,6 +80,9 @@ case $1 in
 	http_msg_server)
 		monitor $1
 		;;
+	websocket_server)
+		monitor $1
+		;;
 	business)
 		monitor_business $2
 		;;

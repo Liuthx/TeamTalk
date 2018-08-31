@@ -83,7 +83,6 @@ int main(int argc, char* argv[])
 	// 必须至少配置2个BusinessServer实例, 一个用于用户登录业务，一个用于其他业务
 	// 这样当其他业务量非常繁忙时，也不会影响客服端的登录验证
 	// 建议配置4个实例，这样更新BusinessServer时，不会影响业务
-	db_server_count = 2;
 	if (db_server_count < 2) {
 		log("DBServerIP need 2 instance at lest ");
 		return 1;

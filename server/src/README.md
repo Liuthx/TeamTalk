@@ -23,3 +23,4 @@ TeamTalk使用了许多第三方库，包括protobuf,hiredis,mariadb(mysql),log4
 	file_server:
 	push_server:
 	msfs:
+	websocket_server:
