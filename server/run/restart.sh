@@ -60,8 +60,11 @@ case $1 in
     msfs)
         restart $1
         ;;
+    websocket_server)
+        restart $1
+        ;;
     *)
         echo "Usage: "
-        echo "  ./restart.sh (login_server|msg_server|route_server|http_msg_server|file_server|push_server)"
+        echo "  ./restart.sh (login_server|msg_server|route_server|http_msg_server|file_server|push_server|websocket_server)"
         ;;
 esac
