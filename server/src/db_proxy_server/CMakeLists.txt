@@ -7,7 +7,7 @@ AUX_SOURCE_DIRECTORY(./business SRC_LIST)
 #SET(LIBRARY_OUTPUT_PATH ./)
 SET(EXECUTABLE_OUTPUT_PATH  ./)
 
-SET(MYSQL_LIB /usr/lib64/mysql)
+SET(MYSQL_LIB /usr/local/mysql/lib)
 SET(UBUNTU_MYSQL_LIB /usr/lib/x86_64-linux-gnu)
 SET(MYSQL_LIB_NAME mysqlclient_r)
 
@@ -32,7 +32,7 @@ if(APPLE)
     SET(MYSQL_LIB /usr/lib64/mysql /usr/local/mysql/lib)
     SET(MYSQL_LIB_NAME mysqlclient)
 else()
-    SET(MYSQL_INCLUDE_DIR /usr/include/mysql)
+    SET(MYSQL_INCLUDE_DIR /usr/local/mysql/include)
 endif()
     
 
