@@ -12,6 +12,7 @@ SET(EXECUTABLE_OUTPUT_PATH  ./)
 SET(PB_INCLUDE_DIR ../protobuf/include)
 SET(PB_LIB_DIR ../protobuf/lib)
 
+SET(SLOG_LIB_DIR ../slog)
 
 #设置自己mac os的openssl的路径
 if(APPLE)

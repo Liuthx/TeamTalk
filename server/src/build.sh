@@ -114,6 +114,10 @@ build() {
 
     cd ../db_proxy_server
     cmake .
+    cp ../slog/liblog4cxx.so ./
+    cp ../slog/liblog4cxx.so.10 ./
+    cp ../slog/liblog4cxx.so.10.0.0 ./
+    cp ../slog/libslog.so ./
     make
     if [ $? -eq 0 ]; then
         echo "make db_proxy_server successed";
@@ -144,7 +148,7 @@ build() {
         exit;
     fi
     cd ../
-    make .
+    cmake .
     make 
     if [ $? -eq 0 ]; then
         echo "make websocket_server successed";
